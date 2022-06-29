@@ -1,8 +1,8 @@
-import math 
 n=int(input())
-x=math.sqrt(n)
-y=(x-math.floor(x))
-if(y==0):
+import math    
+p=math.sqrt(n)
+x=math.floor(p)
+if x-p==0:
     print('True')
 else:
     print('False')
