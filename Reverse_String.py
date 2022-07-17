@@ -1,4 +1,6 @@
-s=list(map(str,input().split()))
-s.reverse()
+a=input()
+s=a.split()[::-1]
+l=[]
 for i in s:
-    print(i,end=' ')
+    l.append(i)
+print(*l)
