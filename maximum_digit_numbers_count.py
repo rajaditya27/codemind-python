@@ -12,5 +12,3 @@ p=max(k)
 for i in l:
     if lenj(i)==p:
         print(i,end=' ')
-        # o.add(i)
-# print(*o)
