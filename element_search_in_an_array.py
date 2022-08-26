@@ -1,12 +1,9 @@
 n=int(input())
-arr=list(map(int,input().strip().split()))[:n]
-m=int(input())
-flag=0
-for i in range(n):
-    if arr[i]==m:
-        flag=1
+l=list(map(int,input().split()))
+z=int(input())
+for i in l:
+    if i==z:
+        print(True)
         break
-if flag==1:
-    print('True')
 else:
-    print('False')
+    print(False)
