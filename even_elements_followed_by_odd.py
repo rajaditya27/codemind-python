@@ -1,10 +1,10 @@
 n=int(input())
 l=list(map(int,input().split()))
-p=[]
-m=[]
+c=[]
+g=[]
 for i in l:
     if i%2==0:
-        p.append(i)
-    if i%2!=0:
-        m.append(i)
-print(*(p+m))
+        c.append(i)
+    else:
+        g.append(i)
+print(*(c+g))
