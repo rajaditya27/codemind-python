@@ -1,4 +1,4 @@
 n=int(input())
-arr=list(map(int,input().split()))
-a=sum(arr)/n
-print("%.2f" %a)
+l=list(map(int,input().split()))
+avg=sum(l)/n
+print('%.2f'%avg)
