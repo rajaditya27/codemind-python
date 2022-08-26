@@ -1,8 +1,11 @@
-s=input().lower()
-g=[]
-for i in s:
-    if s.count(i)==1 and i!=' ':
-        g.append(i)
-        g.sort()
-for i in g:
-    print(i,end='')
+n=input()
+n=n.lower()
+k=set(n)
+k=list(k)
+k.sort()
+if(k.count(" ")>=1):
+    j=k.index(" ")
+    k.pop(j)
+k.sort()
+k="".join(k)
+print(k)
