@@ -1,6 +1,14 @@
 n=int(input())
 l=list(map(int,input().split()))
-c=(l[:n//2])
-k=(l[n//2:])
+c=[]
+g=[]
+for i in range(n):
+    if l[i]<=n/2:
+        c.append(l[i])
+    else:
+        g.append(l[i])
 print(sum(c))
-print(sum(k))
+print(sum(g))
+ 
+
+    
