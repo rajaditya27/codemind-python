@@ -1,11 +1,14 @@
-a,b=map(int,input().split())
-l=list(map(int,input().split()))
-k=list(map(int,input().split()))
-l=set(l)
-k=set(k)
-g=[]
-for i in l:
-    if i  in k:
-        g.append(i)
-
-print(len(g))
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+a=set(a)
+b=set(b)
+# c=0
+s=0
+# for i in a:
+    # if i in b:
+        # c+=1
+for i in b:
+    if i in a:
+        s+=1
+print(s)
