@@ -5,4 +5,6 @@ c=[]
 for i in l:
     if i<=k:
         c.append(i)
+    # else:
+    #     break
 print(sum(c))
