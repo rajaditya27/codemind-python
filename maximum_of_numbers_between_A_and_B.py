@@ -2,10 +2,10 @@ n=int(input())
 l=list(map(int,input().split()))
 a,b=map(int,input().split())
 c=[]
-for i in l:
-    if i in range(a,b+1):
-        c.append(i)
-if c==[]:
-    print(-1)
-else:
+for i in range(len(l)):
+    if (a<=l[i] and b>=l[i]):
+        c.append(l[i])
+if len(c)>=2:
     print(max(c))
+else:
+    print(-1)
