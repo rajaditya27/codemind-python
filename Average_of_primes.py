@@ -1,19 +1,19 @@
 def prime(n):
     if n==1:
         return False
-    for i in range(2,int(n**.5)+1):
+    elif n==2:
+        return True
+    for i in range(2,int(n**0.5)+2):
         if n%i==0:
             return False
-    else:
-        return True
-        
+    return True
 n=int(input())
+a=list(map(int,input().split()))
 s=0
-count=0
-l=list(map(int,input().split()))
-for i in l:
+c=0
+for i in a:
     if prime(i):
         s+=i
-        count+=1
-avg=s/count
-print('%.2f'%avg)
+        c+=1
+m=s/c
+print('%.2f'%m)
