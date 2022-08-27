@@ -7,6 +7,6 @@ def rev(n):
     return rev
 n=int(input())
 l=list(map(int,input().split()))
+c=0
 for i in l:
     print(rev(i),end=' ')
-    
