@@ -1,11 +1,15 @@
-n=input()
-n=n.lower()
-k=set(n)
-k=list(k)
-k.sort()
-if(k.count(" ")>=1):
-    j=k.index(" ")
-    k.pop(j)
-k.sort()
-k="".join(k)
-print(k)
+s = input().lower()
+a = ''
+for i in set(s):
+    if s.count(i)==1:
+        a+=i
+a = list(a)
+a.sort()
+a = str(a)
+a=a.replace(" ","")
+a=a.replace("'","")
+a=a.replace("[","")
+a=a.replace("]","")
+a=a.replace(" ","")
+a=a.replace(",","")
+print(a)
