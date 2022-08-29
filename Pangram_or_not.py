@@ -1,10 +1,8 @@
-a=input()
-a=a.lower()
-s="abcdefghijklmnopqrstuvwxyz"
-for i in s:
-    if i not in a:
+s=input().lower()
+a="abcdefghijklmnopqrstuvwxyz"
+for i in a:
+    if i not in s:
         print(False)
         break
 else:
     print(True)
-
